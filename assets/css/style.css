@@ -1,3 +1,7 @@
+/* style.css for first challenge, Horiseon */
+/* Brenda Jackels, bjackels5@gmail.com */
+
+/* make sure everything goes edge-to-edge */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -27,7 +31,10 @@ header h1 .seo {
     color: #d9dcd6;
 }
 
-/* navigation menu */
+/*
+    header navigation menu. I could probably take out 'header', but what if the customer
+    later wants a footer navigation, and wants it a little different than the header nav?
+*/
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -41,13 +48,14 @@ header nav ul {
     list-style-type: none;
 }
 
+/* whitespace in the header menu for legibility */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
 /*
-    prevent the menu from looking like hyperlinks
+    prevent the menu options from looking like hyperlinks.
     added nav in front of the 'a' so that any other links that someday get added to the website
     will actually appear as links
  */
@@ -71,6 +79,7 @@ nav a {
 
 /* BEGIN CONTENT SECTION FORMATTING */
 
+/* the sections within the content will alternate between image-text and text-image */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -93,7 +102,7 @@ nav a {
     makes it possible to make future changes easier. For example, if the customer decided that they
     want alternate sections to have a different font color, now I can have these combined here, 
     and then add a separate definition that includes just the class(es) that each have only the
-    font color defined
+    font color defined.
 */
 .search-engine-optimization, .online-reputation-management, .social-media-marketing {
     margin-bottom: 20px;
@@ -153,13 +162,16 @@ nav a {
 
 /* END BENEFIT SECTION FORMATTING */
 
-.footer {
+/* BEGIN FOOTER FORMATTING */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
+
+/* END FOOTER FORMATTING */
